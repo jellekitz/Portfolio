@@ -1,0 +1,32 @@
+@import "variables.scss";
+@import "mixins.scss";
+
+
+article{
+	margin-bottom: $content-padding-lp;
+	display: block;
+	img{
+		max-width: 6em;
+	}
+	h3{
+		@include smallHeader(16);
+  		border-bottom: none;
+  		width: auto;
+  		color: $black;
+	}
+}
+
+.wpcf7-text:focus, .wpcf7-textarea:focus {
+	outline:none;
+	border: 2px solid $red;
+}
+
+.wpcf7-form textarea{ 
+    height: 200px;
+}
+
+
+.wpcf7{
+	@include bodyFont(18);
+	width: 100%;
+}

@@ -1,0 +1,14 @@
+@import "variables.scss";
+@import "mixins.scss";
+
+footer{
+	background-color: $black;
+	padding: $content-padding-mp;
+	color: $white;
+	text-align: center;
+	& h3{
+		width: 100%;
+		color: $white;
+		border: none;
+	}
+}

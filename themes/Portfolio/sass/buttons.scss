@@ -1,0 +1,14 @@
+@import "variables.scss";
+@import "mixins.scss";
+
+/* Button reset */
+
+button{
+      border: none;
+      background-color: transparent;
+}
+
+.none{
+      transform: translateX(200%);
+      transition: 0.3s ease-in-out;
+}

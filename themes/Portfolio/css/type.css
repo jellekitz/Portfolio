@@ -1,0 +1,120 @@
+/* Responsive variables */
+/* Font settings */
+/* Animations */
+@keyframes fadein {
+  from {
+    opacity: 0;
+  }
+  to {
+    opacity: 1;
+  }
+}
+/* Firefox < 16 */
+@-moz-keyframes fadein {
+  from {
+    opacity: 0;
+  }
+  to {
+    opacity: 1;
+  }
+}
+/* Safari, Chrome and Opera > 12.1 */
+@-webkit-keyframes fadein {
+  from {
+    opacity: 0;
+  }
+  to {
+    opacity: 1;
+  }
+}
+/* Internet Explorer */
+@-ms-keyframes fadein {
+  from {
+    opacity: 0;
+  }
+  to {
+    opacity: 1;
+  }
+}
+/* Opera < 12.1 */
+@-o-keyframes fadein {
+  from {
+    opacity: 0;
+  }
+  to {
+    opacity: 1;
+  }
+}
+@font-face {
+  font-family: "League Spartan Bold";
+  font-style: normal;
+  font-weight: normal;
+  src: local("League Spartan Bold"), url("../fonts/LeagueSpartan-Bold.woff") format("woff");
+}
+body {
+  font-family: "Open Sans", sans-serif;
+  font-size: 16px;
+}
+
+h1 {
+  font-family: "League Spartan Bold";
+  font-size: 40px;
+}
+
+h2 {
+  font-family: "League Spartan Bold";
+  font-size: 24px;
+  line-height: 33px;
+}
+
+h3 {
+  font-family: "League Spartan Bold";
+  font-size: 16px;
+  border-bottom: 1px solid #484848;
+  width: fit-content;
+  color: #484848;
+}
+
+h4 {
+  font-family: "League Spartan Bold";
+  font-size: 22px;
+}
+
+h5 {
+  font-family: "League Spartan Bold";
+  font-size: 14px;
+}
+
+h6 {
+  font-family: "League Spartan Bold";
+  font-size: 14px;
+}
+
+p {
+  font-size: 16px;
+  line-height: 28px;
+}
+
+blockquote {
+  max-width: 540px;
+  font-size: 23px;
+  margin-top: 110px;
+  margin-right: 0;
+  margin-left: auto;
+  color: #ffffff;
+  text-align: right;
+}
+
+ul {
+  padding: 0 0 0 20px;
+}
+
+textarea {
+  font-family: inherit;
+  font-size: inherit;
+  padding: 0.5em;
+  margin: 1.2em 0 1em 0;
+  resize: none;
+}
+
+/*# sourceMappingURL=type.css.map */

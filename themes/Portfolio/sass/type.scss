@@ -1,0 +1,79 @@
+@import "variables.scss";
+@import "mixins.scss";
+
+@font-face {
+    font-family: 'League Spartan Bold';
+    font-style: normal;
+    font-weight: normal;
+    src: local('League Spartan Bold'), url('../fonts/LeagueSpartan-Bold.woff') format('woff');
+}
+
+body{
+  font-family: 'Open Sans', sans-serif;
+  @include bodyFont(16);
+}
+
+h1{
+  font-family: 'League Spartan Bold';
+  @include hugeHeader(40);
+}
+
+h2{
+  font-family: 'League Spartan Bold';
+  @include bigHeader(24);
+  line-height: 33px;
+}
+
+h3{
+  font-family: 'League Spartan Bold';
+  @include smallHeader(16);
+  border-bottom: 1px solid $gray;
+  width: fit-content;
+  color: $gray;
+}
+
+h4{
+  font-family: 'League Spartan Bold';
+  font-size: 22px;
+}
+
+h5{
+  font-family: 'League Spartan Bold';
+  @include bodyFont(14);
+}
+
+h6{
+  font-family: 'League Spartan Bold';
+  @include bodyFont(14);
+}
+
+p{
+  @include bodyFont(16);
+  line-height: 28px;
+}
+
+blockquote{
+  max-width: 540px;
+  font-size: 23px;
+  margin-top: 110px;
+  margin-right: 0;
+  margin-left: auto;
+  color: $white;
+  text-align: right;
+}
+
+ul{
+  padding: 0 0 0 20px;
+}
+
+textarea{
+  font-family: inherit;
+  font-size: inherit;
+  padding: 0.5em;
+  margin: 1.2em 0 1em 0;
+  resize: none;
+}
+
+
+
+

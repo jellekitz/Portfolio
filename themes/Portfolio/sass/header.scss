@@ -1,0 +1,148 @@
+@import "variables.scss";
+@import "mixins.scss";
+
+#header2{
+	div{
+		
+		div{
+			@include breakpoint(big-desktop){
+				max-width: $content-width;
+				margin: 0 auto;
+				background-color: transparent;
+			}
+			button{
+				display: none;
+			}
+		}
+	}
+	nav{
+		display: none;
+	}
+}
+
+header{
+	position: relative;
+	a:first-child{
+		text-decoration: none;
+		color: $black;
+		position: relative;
+		z-index: 10;
+	}
+	div{
+		position: fixed;
+		top: 0;
+		left: 0;
+		right: 0;
+		z-index: 9;
+		display: flex;
+		padding: $content-padding-mp;
+		background-color: $white;
+		min-height: 68px;
+		@include breakpoint(small-desktop){
+			padding: $content-padding-mp $content-padding-lp;
+		}
+		@include breakpoint(big-desktop){
+			padding: $content-padding-mp $content-padding-lp;
+		}
+		div{
+			@include breakpoint(big-desktop){
+				max-width: $content-width;
+				margin: 0 auto;
+				background-color: transparent;
+			}
+			button{
+				display: flex;
+				flex-direction: row-reverse;
+				@include breakpoint(big-desktop){
+				display: none;
+				}
+			}
+		}
+	}
+	p{
+		margin: -0.2em 0.5em 0 0;
+	}
+	nav{
+		display: none;
+		@include breakpoint(big-desktop){
+			display: block;
+			ul{
+				display: flex;
+    			margin: 0 0 0 auto;
+    			list-style-type: none;
+    			li{
+					margin-right: 1.3em;
+  					@include smallHeader(16);
+					&:last-child{
+						margin-right: 0;
+						a{
+							color: $red;
+						}
+					}
+					a{
+						text-decoration: none;
+						color: $black;
+						font-weight: 600;
+						transition: all 0.1s;
+						&:hover{
+							border-bottom: 2px solid $red;
+							transition: all 0.1s;
+						}
+					}
+				}
+			}
+			div{
+				background-color: transparent;
+			}
+		}
+	}
+}
+
+#last_a{
+	color: $red;
+	text-decoration: none;
+	margin: 0 0 0 auto;
+	transition: 0.2s;
+	&:hover{
+		color: $dark-red;
+		border-bottom: 2px solid $dark-red;
+		transition: 0.2s;
+	}
+}
+
+.active{
+	-webkit-box-shadow: 0px 3px 5px 1px rgba(0,0,0,0.2);
+	-moz-box-shadow: 0px 3px 5px 1px rgba(0,0,0,0.2);
+	box-shadow: 0px 3px 5px 1px rgba(0,0,0,0.2);
+}
+
+.fullscreen-navigation{
+	position: fixed;
+	top: 0;
+	left: 0;
+	right: 0;
+	background-color: #fff;
+	transition: 0.3s ease-in-out;
+	height: 100vh;
+	z-index: 2;
+	padding: 200px $content-padding 0 $content-padding;
+	text-align: center;
+	a{
+		@include bigHeader(24);
+		padding: 0;
+		border-radius: 0;
+		background-color: transparent;
+		color: $black;
+		margin-top: 0;
+		text-decoration: none;
+		font-weight: bold;
+	}
+	ul{
+		list-style-type: none;
+		margin: 0;
+		padding: 0;
+	}
+	li{
+		margin-bottom: $content-padding-lp;
+	}
+}
